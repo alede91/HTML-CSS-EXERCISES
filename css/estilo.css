@@ -1,0 +1,72 @@
+/*Import da fonte.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/*Zera as configuranções dos browsers*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lobster', cursive;
+}
+
+/*Defini o tamanho da view port*/
+
+body {
+	width: 100vw;
+	height: 100vh;	
+}
+
+/*Configura a "div" pai para o flex grid*/
+
+.container {
+	background: rgb(0, 0, 0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	
+}
+
+/*Configura a "div" filho*/
+
+.container .content{
+	position: relative;
+	width: 60vw;
+	height: 60vh;
+	border: 1px solid rgba(240, 248, 255, 0.7);
+	border-radius: 10px;
+	box-shadow: 0 15px 25px 0 rgba(240, 248, 255, 0.4);
+	padding: 3rem;
+
+/*Configura a fonte e o linear gradient*/
+
+	font-size: 8rem;
+	background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+	width: fit-content;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	cursor: pointer;
+	text-shadow: 0 15px 25px 0 rgba(240, 248, 255, 0.6);
+	
+}
+
+/*Configura o sublinhado "hover"*/
+
+.container .content:before {
+	content: '';
+	position: absolute;
+	bottom: 225px;
+	left: 0px;
+	width: 0px;
+	height: 1px;
+	background-color: rgba(240, 248, 255, 0.5);
+	transition: all 1.5s ease;
+}
+
+.container .content:hover:before{
+	width: 100%;
+}
