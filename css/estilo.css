@@ -5,22 +5,27 @@
 /*Zera as configuranções dos browsers*/
 
 * {
+
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Lobster', cursive;
+
 }
 
-/*Defini o tamanho da view port*/
+/*Define o tamanho da view port*/
 
 body {
+
 	width: 100vw;
 	height: 100vh;	
+
 }
 
 /*Configura a "div" pai para o flex grid*/
 
 .container {
+
 	background: rgb(0, 0, 0);
 	display: flex;
 	align-items: center;
@@ -33,6 +38,7 @@ body {
 /*Configura a "div" filho*/
 
 .container .content{
+
 	position: relative;
 	width: 60vw;
 	height: 60vh;
@@ -57,6 +63,7 @@ body {
 /*Configura o sublinhado "hover"*/
 
 .container .content:before {
+
 	content: '';
 	position: absolute;
 	bottom: 225px;
@@ -65,8 +72,11 @@ body {
 	height: 1px;
 	background-color: rgba(240, 248, 255, 0.5);
 	transition: all 1.5s ease;
+
 }
 
 .container .content:hover:before{
+
 	width: 100%;
+	
 }
